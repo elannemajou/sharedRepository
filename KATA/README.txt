@@ -18,7 +18,7 @@ Alexander
 56) How many states are there for threads?
 
 
-Maxence
+Maxence :)
 2) Explain Liskov substitution principle?
 7) A difference between DOM and SAX parser in Java? (answer)
 12) is Swing thread-safe? (answer)
