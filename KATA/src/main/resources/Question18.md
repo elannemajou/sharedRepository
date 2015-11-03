@@ -1,0 +1,1 @@
+https://plumbr.eu/blog/garbage-collection/minor-gc-vs-major-gc-vs-full-gc
