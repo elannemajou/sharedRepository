@@ -27,5 +27,12 @@ public class Question3Test {
 		assertEquals(Question3.getLongFromBytesWithByteBuffer(longBytes), longToGet);
 	}
 	
+	@Test
+	public void testSucessfullyGetLongFromBytesParsingString() {
+		long longToGet = 12L;
+		byte[] longBytes = String.valueOf(longToGet).getBytes();
+		assertEquals(Question3.getLongFromBytesParsingString(longBytes), longToGet);
+	}
+	
 
 }

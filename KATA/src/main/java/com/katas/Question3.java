@@ -22,6 +22,16 @@ public class Question3 {
 		return Long.decode(longToGet);
 	}
 	
+	public static long getLongFromBytesParsingString(byte[] sourceBytes){
+		String longToGet = "0L";
+		try {
+			longToGet = new String(sourceBytes, ENCODING);
+		} catch (UnsupportedEncodingException e) {
+			LOGGER.error("cannot encode string with following encoder : " + ENCODING);
+		}
+		return Long.parseLong(longToGet);
+	}
+	
 	public static long getLongFromBytesWithByteBuffer(byte[] sourceBytes){
 		ByteBuffer bb = ByteBuffer.allocate(1024);
 		bb.put(sourceBytes,0, sourceBytes.length);
