@@ -3,7 +3,7 @@
 ##### URL : http://java67.blogspot.sg/2015/09/60-java-interview-questions-for-quick.html
 
 
-Alexander
+Alexander  
 1. What is Composite design pattern?  
 6. What is advantage and disadvantage of busy spin waiting strategy? (answer)  
 11. Write code to remove elements from ArrayList while iterating? (example)  
@@ -18,7 +18,7 @@ Alexander
 56. How many states are there for threads?  
 
 
-Maxence
+Maxence  
 2. Explain Liskov substitution principle?  
 7. A difference between DOM and SAX parser in Java? (answer)  
 12. is Swing thread-safe? (answer)  
@@ -33,7 +33,7 @@ Maxence
 57. Describe the usage for synchronized word (2)? (examples)  
 63. Factory. please describe main features and coding (answer)  
 
-Eric
+Eric  
 3. Write a Java program to convert bytes to long?  
 8. Write wait-notify code for producer-consumer problem? (solution)  
 13. What is thread local variable in Java? (answer)  
@@ -49,7 +49,7 @@ Eric
 62. Singleton, please describe main features and coding (answer)  
 
 
-Donathan
+Donathan  
 4. What is false sharing in multithreading Java?  
 9. Write code for thread-safe Singleton in Java? (answer)  
 14. How do you convert a String to date in Java? (example)  
@@ -65,9 +65,9 @@ Donathan
 64. Have you used others? please describe them?  
 
 
-Roland
+Roland  
 5. Can we make an array volatile in Java? What is the effect of making it volatile? (answer)  
-10. What are 4 ways to iterate over Map in Java? Which one is best and why? (solution)v
+10. What are 4 ways to iterate over Map in Java? Which one is best and why? (solution)  
 15. Can we use String in the switch case? (Yes)  
 20. How to check if a String contains only numeric digits? (regular expression)  
 25. How do you print Array in Java? (answer)  
