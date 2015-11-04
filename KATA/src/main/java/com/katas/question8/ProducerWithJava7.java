@@ -1,7 +1,6 @@
 package com.katas.question8;
 
 import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.atomic.AtomicInteger;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,12 +18,12 @@ public class ProducerWithJava7 implements Runnable {
 	}
 
 	public void run() {
-		AtomicInteger i = new AtomicInteger(0);
-		while (i.get() < nbElementsToProduce){
-			i.incrementAndGet();
-			LOGGER.info("Produced: " + i.get());
+		int i = 0;
+		while (i < nbElementsToProduce){
+			i++;
+			LOGGER.info("Produced: " + i);
 			try {
-				produce(i.get());
+				produce(i);
 			} catch (InterruptedException ex) {
 				LOGGER.error(ex.getMessage());
 			}
