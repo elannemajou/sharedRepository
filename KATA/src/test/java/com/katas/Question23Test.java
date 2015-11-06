@@ -1,8 +1,10 @@
 package com.katas;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 
 import java.util.HashMap;
+
 import org.junit.Test;
 
 public class Question23Test {
@@ -11,7 +13,7 @@ public class Question23Test {
 	public void testWithGoodHashCode() {
 		HashMap<String, String> stringMap = new HashMap<String, String>(); 
 		stringMap.put("Test1Key", "test1value");
-		assertEquals("test1Value", (String) stringMap.get("Test1Key"));
+		assertEquals("test1value", (String) stringMap.get("Test1Key"));
 	}
 	
 	@Test
@@ -26,7 +28,7 @@ public class Question23Test {
 		q2.setInternalValue("Test1Value");
 		stringMap.put(q2, "test2value");
 		
-		assertEquals("test1Value", (String) stringMap.get(q1));
+		assertNotEquals("test1Value", (String) stringMap.get(q1));
 	}
 
 }
