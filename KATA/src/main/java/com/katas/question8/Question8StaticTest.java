@@ -6,11 +6,16 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.katas.Question48;
+
 public class Question8StaticTest {
 
 	private final static int QUEUE_SIZE = 100;
 	private final static int NB_ELEMENTS_TO_PRODUCE = 50;
-	
+	private final static Logger LOGGER = LoggerFactory.getLogger(Question8StaticTest.class);
 	
 	public static void main(String[] args) {
 		timeAndComputeBeforeJava7();
@@ -21,14 +26,14 @@ public class Question8StaticTest {
 		final long start = System.nanoTime();
 		computeBeforeJava7();
 		final long end = System.nanoTime();
-		System.out.println("Time (second) before java 7 taken is " + (end-start)/1.0e9);
+		LOGGER.info("Time (second) before java 7 taken is " + (end-start)/1.0e9);
 	}
 	
 	public static void timeAndComputeWithJava7(){
 		final long start = System.nanoTime();
 		computeWithJava7();
 		final long end = System.nanoTime();
-		System.out.println("Time (second) with java 7 taken is " + (end-start)/1.0e9);
+		LOGGER.info("Time (second) with java 7 taken is " + (end-start)/1.0e9);
 	}
 	
 	

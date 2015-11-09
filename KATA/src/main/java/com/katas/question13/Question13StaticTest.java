@@ -1,20 +1,27 @@
 package com.katas.question13;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.katas.Question3;
+
 
 public class Question13StaticTest {
+	
+	private final static Logger LOGGER = LoggerFactory.getLogger(Question13StaticTest.class);
 	
 	public static void main(String[] args) {
 		Runnable runnable1 = new Runnable(){
 			public void run() {
 				int id1 = ThreadId.get();
-				System.out.println("Thread id is : " + id1);
+				LOGGER.info("Thread id is : " + id1);
 			}
 		};
 		
 		Runnable runnable2 = new Runnable(){
 			public void run() {
 				int id1 = ThreadIdWithoutThreadLocal.get();
-				System.out.println("Thread id is : " + id1);
+				LOGGER.info("Thread id is : " + id1);
 			}
 		};
 		

@@ -31,7 +31,8 @@ Maxence
 47. Describe the String class – unique properties (answer)  
 52. What’s a tree in Java? How different is from the tree in data structure?  
 57. Describe the usage for synchronized word (2)? (examples)  
-63. Factory. please describe main features and coding (answer)  
+62. Singleton, please describe main features and coding (answer)  
+
 
 Eric  
 3. Write a Java program to convert bytes to long?  
@@ -39,14 +40,14 @@ Eric
 13. What is thread local variable in Java? (answer)  
 18. Difference between major and minor GC? (answer)  
 23. Why you need to override hashCode, when you override equals in Java? (answer)  
-28. Write a short program to illustrate the concept of deadlock  
-32. Difference between Abstract class and Interface - given a situation what would you choose between abstract class and interface? (answer)  
-37. Explain the methods in Object class? (answer)  
-42. How many accessibility modifiers exist? Please describe them. (answer)  
-47. Describe the String class – unique properties (answer)  
-52. What’s a tree in Java? How different is from the tree in data structure?  
-57. Describe the usage for synchronized word (2)? (examples)  
-62. Singleton, please describe main features and coding (answer)  
+28. Write a short program to illustrate the concept of deadlock   
+33. Difference between inheritance and composition? (answer)  
+38. What is coupling? How do you reduce coupling and why?  
+43. Why do you need a main method? (answer)  
+48. StringBuilder vs StringBuffer? differences? (answer)  
+53. What’s a map?  
+58. Serialization in java – a description and usage? (example)  
+63. Factory. please describe main features and coding (answer)    
 
 
 Donathan  
