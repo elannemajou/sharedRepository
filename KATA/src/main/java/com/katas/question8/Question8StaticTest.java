@@ -9,8 +9,6 @@ import java.util.concurrent.Executors;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.katas.Question48;
-
 public class Question8StaticTest {
 
 	private final static int QUEUE_SIZE = 100;
