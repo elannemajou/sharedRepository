@@ -9,6 +9,11 @@ import java.util.concurrent.Executors;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.katas.question8.ConsumerBeforeJava7;
+import com.katas.question8.ConsumerWithJava7;
+import com.katas.question8.ProducerBeforeJava7;
+import com.katas.question8.ProducerWithJava7;
+
 public class Question8StaticTest {
 
 	private final static int QUEUE_SIZE = 100;

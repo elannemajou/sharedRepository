@@ -1,9 +1,11 @@
-package com.katas;
+package com.katas.question48;
 
 import java.util.Arrays;
 import java.util.List;
 
 import org.junit.Test;
+
+import com.katas.Question48;
 
 public class Question48Test {
 	

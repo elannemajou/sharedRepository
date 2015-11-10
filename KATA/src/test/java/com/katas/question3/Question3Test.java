@@ -1,8 +1,10 @@
-package com.katas;
+package com.katas.question3;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
+
+import com.katas.Question3;
 
 public class Question3Test {
 

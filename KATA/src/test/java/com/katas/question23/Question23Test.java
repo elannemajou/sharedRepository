@@ -1,4 +1,4 @@
-package com.katas;
+package com.katas.question23;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
@@ -6,6 +6,8 @@ import static org.junit.Assert.assertNotEquals;
 import java.util.HashMap;
 
 import org.junit.Test;
+
+import com.katas.Question23;
 
 public class Question23Test {
 

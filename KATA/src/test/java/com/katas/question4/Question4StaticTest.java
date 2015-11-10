@@ -5,6 +5,8 @@ import static com.katas.question4.FalseSharing.NUM_THREADS;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.katas.question4.FalseSharing;
+
 public class Question4StaticTest {
 	
 	private final static Logger LOGGER = LoggerFactory.getLogger(Question4StaticTest.class);

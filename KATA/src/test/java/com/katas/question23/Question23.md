@@ -1,6 +1,6 @@
 # Question 23
 =============
-Why you need to override hashCode, when you override equals in Java?
+### Why you need to override hashCode, when you override equals in Java?
 --------------------------------------------------------------------
 Certaines collections comme les HashMap, HahSet, utilisent le hashcode de la clé et comparent la clé avec la méthode equals pour retrouver les éléments.
 Exemple HashMap : 
