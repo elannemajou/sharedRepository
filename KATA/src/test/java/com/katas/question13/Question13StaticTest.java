@@ -3,10 +3,6 @@ package com.katas.question13;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.katas.Question3;
-import com.katas.question13.ThreadId;
-import com.katas.question13.ThreadIdWithoutThreadLocal;
-
 
 public class Question13StaticTest {
 	
