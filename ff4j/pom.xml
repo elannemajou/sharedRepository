@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.ff4j</groupId>
-	<artifactId>ff4jdemo</artifactId>
+	<groupId>com.tutorial</groupId>
+	<artifactId>ff4j</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Ff4jDemo</name>
+	<name>Ff4j</name>
 	<description>projet demo pour ff4j en java</description>
 
 	<dependencies>
