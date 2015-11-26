@@ -1,9 +1,46 @@
-<!doctype html>
-<html ng-app>
-  <head>
-    <title>My Angular Page for Shares</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-  </head>
-  <body>
-  </body>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Liste des Stocks</title>
+<link rel="stylesheet" type="text/css"
+	href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body ng-app="MyStock" ng-controller="StockController">
+	<div class="container spacer">
+		<form>
+			<label>Keyword :</label> <input type="text" ng-model="keyword">
+			<button ng-click="search()">Search</button>
+		</form>
+	</div>
+	<div class="container spacer">
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>REF</th>
+					<th>NAME</th>
+					<th>PRICE</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="s in stocks.content">
+					<td>{{s.reference}}</td>
+					<td>{{s.name}}</td>
+					<td>{{s.price}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="container">
+		<ul class="nav nav-pills">
+			<li ng-class="{active:$index==currentPage}" class="clickable" ng-repeat="p in pages track by $index">
+				<a ng-click="gotoPage($index)">{{$index}}</a>
+			</li>
+		</ul>
+	</div>
+	<script type="text/javascript"
+		src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
 </html>
