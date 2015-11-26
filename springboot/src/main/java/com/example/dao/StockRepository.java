@@ -18,4 +18,7 @@ public interface StockRepository extends JpaRepository<Stock,Long>{
 	
 	@Query("select s from Stock s where s.name like :x")
 	public Page<Stock> findStocksByKey(@Param("x")String key, Pageable p);
+	
+	public Page<Stock> findStocksByNameContaining(String key, Pageable p);
+	
 }

@@ -38,9 +38,14 @@ public class StockController {
 		return stockRepository.findAll(new PageRequest(page, 5));
 	}
 	
-	@RequestMapping("stocksByKeyword")
+	@RequestMapping("stocksByKeywordPerso")
 	public Page<Stock> getStocksByKeyword(String kw, int page){
 		return stockRepository.findStocksByKey("%" + kw + "%", new PageRequest(page, 5));
+	}
+	
+	@RequestMapping("stocksByKeyword")
+	public Page<Stock> getStocksByKeywordLike(String kw, int page){
+		return stockRepository.findStocksByNameContaining(kw, new PageRequest(page, 5));
 	}
 	
 }
