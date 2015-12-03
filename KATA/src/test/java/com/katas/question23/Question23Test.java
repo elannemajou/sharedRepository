@@ -7,30 +7,30 @@ import java.util.HashMap;
 
 import org.junit.Test;
 
-import com.katas.Question23;
-
 public class Question23Test {
 
 	@Test
-	public void testWithGoodHashCode() {
-		HashMap<String, String> stringMap = new HashMap<String, String>(); 
-		stringMap.put("Test1Key", "test1value");
-		assertEquals("test1value", (String) stringMap.get("Test1Key"));
+	public void testWithGoodApple() {
+		HashMap<GoodApple, String> appleMap = new HashMap<GoodApple, String>();
+		GoodApple a1 = new GoodApple("green");
+		GoodApple a2 = new GoodApple("red");
+		
+		appleMap.put(a1, "test1value");
+		appleMap.put(a2, "test2value");
+		assertEquals("test1value", (String) appleMap.get(a1));
 	}
 	
 	@Test
-	public void testWithChangedHashCode() {
-		HashMap<Question23, String> stringMap = new HashMap<Question23, String>(); 
+	public void testWithBadApple() {
+		HashMap<BadApple, String> appleMap = new HashMap<BadApple, String>(); 
 		
-		Question23 q1 = new Question23();
-		q1.setInternalValue("Test1Value");
-		stringMap.put(q1, "test1value");
+		BadApple a1 = new BadApple("green");
+		appleMap.put(a1, "test1value");
 		
-		Question23 q2 = new Question23();
-		q2.setInternalValue("Test1Value");
-		stringMap.put(q2, "test2value");
+		BadApple a2 = new BadApple("red");
+		appleMap.put(a2, "test2value");
 		
-		assertNotEquals("test1Value", (String) stringMap.get(q1));
+		assertNotEquals("test1Value", (String) appleMap.get(a1));
 	}
 
 }
